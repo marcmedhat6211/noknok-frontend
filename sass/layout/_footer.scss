@@ -1,0 +1,81 @@
+footer {
+  background-color: $color-white;
+  border-top: 1px solid $color-primary;
+
+  .footer-text {
+    color: $color-dark-grey;
+  }
+
+  .last-column {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    .wd-footer-icon-container {
+      width: 100%;
+      margin-bottom: 40px;
+
+      svg {
+        width: 100%;
+      }
+    }
+
+    .footer-social-icons {
+      margin-bottom: 80px;
+
+      i {
+        font-size: 25px;
+
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+
+    .bank-cards-container {
+      display: flex;
+    }
+  }
+
+  .copyright-text-container {
+    position: relative;
+    width: 100%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      background-color: $color-grey-1;
+      top: 50%;
+      transform: translateY(-50%);
+      width: calc(100% - 280px);
+      right: 0;
+    }
+  }
+}
+
+@include media-breakpoint-md {
+  footer {
+    .footer-text {
+      font-size: 30px !important;
+    }
+
+    .last-column {
+      align-items: start;
+
+      .footer-social-icons {
+        margin-bottom: 40px;
+      }
+
+      svg {
+        width: 75% !important;
+      }
+    }
+
+    .copyright-text-container {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
