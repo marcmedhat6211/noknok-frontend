@@ -1,0 +1,35 @@
+#product_customization_modal {
+  .modal-dialog {
+    min-width: 880px;
+    .modal-content {
+      border-radius: 10px;
+      .modal-body {
+        padding: 40px;
+        .form-title {
+          font-size: 20px;
+          font-weight: 700;
+          color: $color-dark-grey;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-md {
+  #product_customization_modal {
+    .modal-dialog {
+      min-width: unset;
+      .modal-content {
+        border-radius: 10px;
+        .modal-body {
+          padding: 20px;
+          .form-title {
+            font-size: 18px;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}
