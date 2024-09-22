@@ -1,0 +1,12 @@
+.input-1 {
+  color: $color-white !important;
+  border-color: $color-white !important;
+
+  &:focus {
+    border-color: $color-white !important;
+  }
+
+  &::placeholder {
+    color: $color-white !important;
+  }
+}

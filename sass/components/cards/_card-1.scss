@@ -1,0 +1,37 @@
+.card-1 {
+  background-color: $color-light-grey;
+  position: relative;
+
+  .card-img {
+    background-size: 300px 270px !important;
+    background-position: center !important;
+  }
+
+  .add-to-cart-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid $color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+
+    i {
+      font-size: 20px;
+      color: $color-primary;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover {
+      background-color: $color-primary;
+      i {
+        color: $color-white;
+      }
+    }
+  }
+}

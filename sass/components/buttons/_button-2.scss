@@ -1,0 +1,9 @@
+.button-2 {
+  color: $color-primary;
+  border-color: $color-primary !important;
+
+  &:hover {
+    color: $color-primary;
+    border-color: $color-primary !important;
+  }
+}
