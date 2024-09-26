@@ -93,10 +93,6 @@ footer .copyright-text-container::after {
   background-color: #f8f8f8;
   position: relative;
 }
-.card-1 .card-img {
-  background-size: 300px 270px !important;
-  background-position: center !important;
-}
 .card-1 .add-to-cart-btn {
   width: 45px;
   height: 45px;
@@ -124,14 +120,7 @@ footer .copyright-text-container::after {
 }
 
 .card-2 {
-  justify-content: center;
-  align-items: center;
-  height: 470px !important;
   background-color: #f8f8f8;
-}
-.card-2 img {
-  width: 350px !important;
-  height: 250px !important;
 }
 
 .button-1 {
@@ -219,6 +208,57 @@ input.input-2 {
   #product_customization_modal .modal-dialog .modal-content .modal-body .form-title {
     font-size: 18px;
     margin-bottom: 15px;
+  }
+}
+#feedback_modal .modal-dialog {
+  min-width: 880px;
+}
+#feedback_modal .modal-dialog .modal-content {
+  border-radius: 10px;
+  min-height: 555px;
+}
+#feedback_modal .modal-dialog .modal-content .modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#feedback_modal .modal-dialog .modal-content .modal-body svg {
+  width: 162px;
+  height: 162px;
+}
+#feedback_modal .modal-dialog .modal-content .modal-body .modal-text {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #505050;
+}
+#feedback_modal .modal-dialog .modal-content .modal-body .modal-close-btn {
+  background-color: transparent;
+  padding: 0;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+}
+#feedback_modal .modal-dialog .modal-content .modal-body .modal-close-btn i {
+  font-size: 18px;
+}
+
+@media (max-width: 991.98px) {
+  #feedback_modal .modal-dialog {
+    min-width: unset;
+  }
+  #feedback_modal .modal-dialog .modal-content {
+    min-height: 400px;
+  }
+  #feedback_modal .modal-dialog .modal-content .modal-body svg {
+    width: 100px;
+    height: 100px;
+  }
+  #feedback_modal .modal-dialog .modal-content .modal-body .modal-text {
+    font-size: 20px;
   }
 }
 
