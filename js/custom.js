@@ -8,6 +8,10 @@ $(document).ready(function () {
     $(".sidenav.canvas-sidebar").removeClass("show");
     $(".canvas-sidebar.cart-canvas").addClass("show");
   });
+
+  $("a#mobile_profile_btn").on("click", function (event) {
+    $(".sidenav.canvas-sidebar").removeClass("show");
+  });
 });
 
 function convertSvgToIcon($img) {

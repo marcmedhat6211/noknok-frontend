@@ -145,7 +145,12 @@
                       class="navbar-nav flex-row justify-content-xl-end d-flex flex-wrap text-body py-0 navbar-right"
                     >
                       <li class="nav-item">
-                        <a class="nav-link pr-3 py-0" href="#">
+                        <a
+                          class="nav-link pr-3 py-0"
+                          data-toggle="modal"
+                          data-target="#edit_profile_modal"
+                          href="#"
+                        >
                           <i class="far fa-user-alt"></i>
                         </a>
                       </li>
@@ -816,6 +821,17 @@
             >
               <a class="nav-link p-0" href="#" id="cart_mobile_btn">Cart</a>
             </li>
+            <li
+              aria-haspopup="true"
+              aria-expanded="false"
+              class="nav-item py-1 px-0"
+              data-toggle="modal"
+              data-target="#edit_profile_modal"
+            >
+              <a class="nav-link p-0" href="#" id="mobile_profile_btn"
+                >Profile</a
+              >
+            </li>
           </ul>
         </div>
         <div
@@ -853,5 +869,87 @@
       </div>
     </div>
     <!-- MOBILE MENU END -->
+
+    <!-- EDIT PROFILE MODAL START -->
+    <div
+      class="modal fade"
+      id="edit_profile_modal"
+      tabindex="-1"
+      aria-labelledby="edit_profile_modal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <form action="#" id="edit_profile_form">
+              <h6 class="form-title">Account Details</h6>
+              <div class="mb-3">
+                <label for="user_name" class="mb-2 text-primary font-weight-500"
+                  >Name
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name"
+                  id="user_name"
+                  value="Mohamed Ali"
+                />
+              </div>
+              <div class="mb-3">
+                <label
+                  for="user_address"
+                  class="mb-2 text-primary font-weight-500"
+                  >Address
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your address"
+                  id="user_address"
+                  value="28 omar zafan - Sporting - Alexandria"
+                />
+              </div>
+              <div class="mb-3">
+                <label
+                  for="user_email"
+                  class="mb-2 text-primary font-weight-500"
+                  >Email
+                </label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                  id="user_email"
+                  value="mohamed1234@gmail.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label
+                  for="user_phone"
+                  class="mb-2 text-primary font-weight-500"
+                  >Phone Number
+                </label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Phone number"
+                  id="user_phone"
+                  value="01226564766"
+                />
+              </div>
+              <div class="d-flex justify-content-end">
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-block mb-3 text-uppercase w-auto"
+                >
+                  Save
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- EDIT PROFILE MODAL END -->
   </body>
 </html>

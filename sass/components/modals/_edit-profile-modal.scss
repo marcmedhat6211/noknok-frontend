@@ -1,0 +1,24 @@
+#edit_profile_modal {
+  .modal-dialog {
+    min-width: 620px;
+    .modal-content {
+      border-radius: 10px;
+      .modal-body {
+        padding: 40px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-md {
+  #edit_profile_modal {
+    .modal-dialog {
+      min-width: unset;
+      .modal-content {
+        .modal-body {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
