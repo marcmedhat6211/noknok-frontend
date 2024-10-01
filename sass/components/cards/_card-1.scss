@@ -1,25 +1,32 @@
+@mixin card-button-mixin {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+
+  i {
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
 .card-1 {
   background-color: $color-light-grey;
   position: relative;
 
   .add-to-cart-btn {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
+    @include card-button-mixin();
     border: 1px solid $color-primary;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
     bottom: 20px;
     right: 20px;
-    background-color: transparent;
-    transition: all 0.2s ease-in-out;
 
     i {
-      font-size: 20px;
       color: $color-primary;
-      transition: all 0.2s ease-in-out;
     }
 
     &:hover {
@@ -27,6 +34,17 @@
       i {
         color: $color-white;
       }
+    }
+  }
+
+  .add-to-wishlist-btn {
+    @include card-button-mixin();
+    border: 1px solid $color-off-white;
+    top: 20px;
+    right: 20px;
+
+    i {
+      color: $color-black;
     }
   }
 }

@@ -67,30 +67,71 @@ footer {
 #product_details_page .price-text {
   color: #e90628 !important; }
 
+#order_feedback_page .page-icon {
+  margin-bottom: 32px; }
+#order_feedback_page .page-text {
+  font-size: 32px;
+  font-weight: 700;
+  color: #505050;
+  margin-bottom: 32px; }
+
+#project_details_page .slick-arrow.slick-prev {
+  left: 70px !important; }
+#project_details_page .slick-arrow.slick-next {
+  right: 70px !important; }
+#project_details_page .card-2 {
+  width: 75% !important; }
+
+@media (max-width: 991.98px) {
+  #project_details_page .slick-arrow.slick-prev {
+    left: 0 !important; }
+  #project_details_page .slick-arrow.slick-next {
+    right: 0 !important; }
+  #project_details_page .card-2 {
+    width: 100% !important; } }
 .card-1 {
   background-color: #f8f8f8;
   position: relative; }
   .card-1 .add-to-cart-btn {
     width: 45px;
     height: 45px;
-    border-radius: 50%;
-    border: 1px solid #e90628;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
     position: absolute;
-    bottom: 20px;
-    right: 20px;
     background-color: transparent;
-    transition: all 0.2s ease-in-out; }
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #e90628;
+    bottom: 20px;
+    right: 20px; }
     .card-1 .add-to-cart-btn i {
       font-size: 20px;
-      color: #e90628;
       transition: all 0.2s ease-in-out; }
+    .card-1 .add-to-cart-btn i {
+      color: #e90628; }
     .card-1 .add-to-cart-btn:hover {
       background-color: #e90628; }
       .card-1 .add-to-cart-btn:hover i {
         color: #ffffff; }
+  .card-1 .add-to-wishlist-btn {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #e4e4e4;
+    top: 20px;
+    right: 20px; }
+    .card-1 .add-to-wishlist-btn i {
+      font-size: 20px;
+      transition: all 0.2s ease-in-out; }
+    .card-1 .add-to-wishlist-btn i {
+      color: #000000; }
 
 .card-2 {
   background-color: #f8f8f8; }

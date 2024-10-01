@@ -1,0 +1,29 @@
+#project_details_page {
+  .slick-arrow.slick-prev {
+    left: 70px !important;
+  }
+
+  .slick-arrow.slick-next {
+    right: 70px !important;
+  }
+
+  .card-2 {
+    width: 75% !important;
+  }
+}
+
+@include media-breakpoint-md {
+  #project_details_page {
+    .slick-arrow.slick-prev {
+      left: 0 !important;
+    }
+
+    .slick-arrow.slick-next {
+      right: 0 !important;
+    }
+
+    .card-2 {
+      width: 100% !important;
+    }
+  }
+}
