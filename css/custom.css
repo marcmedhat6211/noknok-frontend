@@ -48,16 +48,25 @@ footer {
   footer .copyright-text-container::after {
     display: none; } }
 #home_page .section__title {
+  position: relative;
   width: 100%;
-  height: 84px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #e90628;
-  color: #ffffff;
+  text-align: center;
+  color: #505050;
   font-size: 40px;
   font-weight: 400;
   margin: 40px 0; }
+  #home_page .section__title::before, #home_page .section__title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 3px;
+    background-color: #e90628;
+    width: calc(50% - 120px); }
+  #home_page .section__title::before {
+    left: 0; }
+  #home_page .section__title::after {
+    right: 0; }
 
 @media (max-width: 991.98px) {
   #home_page .section__title {
